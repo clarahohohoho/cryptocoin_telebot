@@ -68,5 +68,5 @@ dispatcher.add_handler(MessageHandler(Filters.text, get_coininfo))
 updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
                           url_path=telegram_bot_token,
-                          webhook_url = 'https://YOUR-HEROKU-NAME.herokuapp.com/' + telegram_bot_token)
+                          webhook_url = 'https://YOUR-HEROKU-NAME-HERE.herokuapp.com/' + telegram_bot_token)
 updater.idle()
